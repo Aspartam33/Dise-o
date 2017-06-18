@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="AnalistaDeObras" Bounds="-52.3383333333334,-22,111.09,25.96" Label="Analista de obras" UseManualLocation="True" />
+    <Node Id="AnalistaDePresupuesto" Bounds="-59.4583425903321,115.019949542236,147.33,25.96" Label="Analista de presupuesto" UseManualLocation="True" />
+    <Node Id="AnalistaDeRecursosHumanos" Bounds="-68.0000092569987,188.980049542236,182.413333333333,25.96" Label="Analista de Recursos Humanos" UseManualLocation="True" />
+    <Node Id="AnalistaInventario" Bounds="-56.835,51,118.083333333333,25.96" Label="Analista Inventario" UseManualLocation="True" />
+    <Node Id="ENTRADAS" Category="Comment" Bounds="-32.3000030517578,-88.5200042724609,78.4833333333333,25.96" UseManualLocation="True" />
+    <Node Id="Gerentes" Bounds="567.008333333333,94,67.1866666666665,25.96" UseManualLocation="True" />
+    <Node Id="Ingenieros" Bounds="562.803333333333,198,75.5966666666668,25.96" UseManualLocation="True" />
+    <Node Id="Personal" Bounds="561.275,3.99999999999999,64.6533333333332,25.96" UseManualLocation="True" />
+    <Node Id="SALIDAS" Category="Comment" Bounds="560.549995422363,-87.2800064086914,65.1900000000001,25.96" UseManualLocation="True" />
+    <Node Id="SistemaDeReporteYGestion" Bounds="212.413333333333,56,174.39,25.96" Label="Sistema de Reporte y gestion" />
+  </Nodes>
+  <Links>
+    <Link Source="AnalistaDeObras" Target="SistemaDeReporteYGestion" Bounds="52.5309393899518,3.96000335693361,189.049441974102,49.7495687378625" />
+    <Link Source="AnalistaDePresupuesto" Target="SistemaDeReporteYGestion" Bounds="76.9738032019794,83.7826008499524,151.053868993363,31.2373486922839" />
+    <Link Source="AnalistaDeRecursosHumanos" Target="SistemaDeReporteYGestion" Bounds="50.1858481863305,85.8619042782812,214.333111053672,103.118132953164" />
+    <Link Source="AnalistaInventario" Target="SistemaDeReporteYGestion" Bounds="61.2483164469401,64.9726290716809,142.166292620108,2.3901365701791" />
+    <Link Source="SistemaDeReporteYGestion" Target="Gerentes" Bounds="386.629526886618,79.9663061550435,171.449702420857,21.6452913437878" />
+    <Link Source="SistemaDeReporteYGestion" Target="Ingenieros" Bounds="327.121672200127,81.9599995422363,237.827022912635,112.199948864605" />
+    <Link Source="SistemaDeReporteYGestion" Target="Personal" Bounds="372.993599830041,24.2653122244147,179.418979728755,31.7346873178217" />
+  </Links>
+  <Categories>
+    <Category Id="Comment" Label="Comment" Description="Represents a user defined comment on the diagram" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="Comments" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GraphDirection" DataType="Microsoft.VisualStudio.Diagrams.Layout.LayoutOrientation" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+    <Property Id="ZoomLevel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Comment" ValueLabel="Has comment">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>
