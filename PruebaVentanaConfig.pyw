@@ -14,6 +14,7 @@ class VentanaInicio(QMainWindow):
         self.BotondeCreacion.clicked.connect(self.AbrirConfiguracion)
     def AbrirConfiguracion(self):
         self.VentanaEmergente.exec_()
+        
 app=QApplication(sys.argv)
 ventana=VentanaInicio()
 ventana.show()
